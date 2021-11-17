@@ -1,0 +1,62 @@
+@keyframes background-animate {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+@keyframes text {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  animation: text infinite 30s;
+}
+
+body {
+  background: linear-gradient(90deg, #000 0%, #d4d4d4 100%);
+  background-size: 400%;
+  animation: background-animate infinite 30s;
+  background-position: left;
+  animation-delay: 5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 1px 2px #808080;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.social a i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #fff;
+}
